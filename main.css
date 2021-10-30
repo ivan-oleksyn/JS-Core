@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.game-wrapper {
+    margin: 50px auto;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer {
+    height: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 90px;
+}
+
+.buttons {
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button {
+    width: 120px;
+    height: 40px;
+    color: #fefefe;
+    background-color: #f35f24;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.game-fields {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.drag-field,
+.drop-field {
+    width: 400px;
+    height: 400px;
+    background-color: lightgray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px black;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.drop-elem {
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+
+    position: relative;
+}
+
+.drag-elem {
+    width: 100px;
+    height: 100px;
+    background-image: url('./arsenal.png');
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    z-index: 5;
+    color: rgba(0, 0, 0, 0);
+}
+
+.img1 {
+    background-position: 0px 0px;
+}
+
+.img2 {
+    background-position: -100px 0px;
+}
+
+.img3 {
+    background-position: -200px 0px;
+}
+
+.img4 {
+    background-position: -300px 0px;
+}
+
+.img5 {
+    background-position: 0px -100px;
+}
+
+.img6 {
+    background-position: -100px -100px;
+}
+
+.img7 {
+    background-position: -200px -100px;
+}
+
+.img8 {
+    background-position: -300px -100px;
+}
+
+.img9 {
+    background-position: 0px -200px;
+}
+
+.img10 {
+    background-position: -100px -200px;
+}
+
+.img11 {
+    background-position: -200px -200px;
+}
+
+.img12 {
+    background-position: -300px -200px;
+}
+
+.img13 {
+    background-position: 0px -300px;
+}
+
+.img14 {
+    background-position: -100px -300px;
+}
+
+.img15 {
+    background-position: -200px -300px;
+}
+
+.img16 {
+    background-position: -300px -300px;
+}
+
+.modal-window {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.568);
+}
+
+.modal-window-check,
+.modal-window-result {
+    width: 700px;
+    height: 200px;
+    background-color: #fff;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding-top: 50px;
+}
+
+.item-filling {
+    width: 100%;
+    height: 60px;
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-filling h2 {
+    font-size: 30px;
+}
+
+.modal-window-buttons {
+    width: 250px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-button {
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.modal-btn-close,
+.result-btn-close {
+    background-color: #ff0000;
+}
+
+.modal-btn-check {
+    background-color: #008000;
+}
+
+.result-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.disabled {
+    background-color: #fa8b5f;
+}

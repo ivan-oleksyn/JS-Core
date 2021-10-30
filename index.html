@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="game-wrapper">
+        <div class="timer">01:00</div>
+        <div class="buttons">
+            <button class="button start" data-clicked="false">Start game!</button>
+            <button class="button check disabled" disabled>Check result</button>
+            <button class="button new">New game</button>
+        </div>
+        <div class="game-fields">
+            <div class="drag-field">
+                <div class="drag-elem img1" data-order="1"></div>
+                <div class="drag-elem img2" data-order="2"></div>
+                <div class="drag-elem img3" data-order="3"></div>
+                <div class="drag-elem img4" data-order="4"></div>
+                <div class="drag-elem img5" data-order="5"></div>
+                <div class="drag-elem img6" data-order="6"></div>
+                <div class="drag-elem img7" data-order="7"></div>
+                <div class="drag-elem img8" data-order="8"></div>
+                <div class="drag-elem img9" data-order="9"></div>
+                <div class="drag-elem img10" data-order="10"></div>
+                <div class="drag-elem img11" data-order="11"></div>
+                <div class="drag-elem img12" data-order="12"></div>
+                <div class="drag-elem img13" data-order="13"></div>
+                <div class="drag-elem img14" data-order="14"></div>
+                <div class="drag-elem img15" data-order="15"></div>
+                <div class="drag-elem img16" data-order="16"></div>
+            </div>
+            <div class="drop-field">
+                <div class="drop-elem"></div>
+                <div class="drop-elem"></div>
+                <div class="drop-elem"></div>
+                <div class="drop-elem"></div>
+                <div class="drop-elem"></div>
+                <div class="drop-elem"></div>
+                <div class="drop-elem"></div>
+                <div class="drop-elem"></div>
+                <div class="drop-elem"></div>
+                <div class="drop-elem"></div>
+                <div class="drop-elem"></div>
+                <div class="drop-elem"></div>
+                <div class="drop-elem"></div>
+                <div class="drop-elem"></div>
+                <div class="drop-elem"></div>
+                <div class="drop-elem"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-window hidden">
+        <div class="modal-window-check hidden">
+            <div class="item-filling">
+                <h2 class="modal-check-title">You still have time, you sure?</h2>
+                <p class="modal-timer">01:00</p>
+            </div>
+            <div class="modal-window-buttons">
+                <button class="modal-button modal-btn-close">Close</button>
+                <button class="modal-button modal-btn-check">Check</button>
+            </div>
+        </div>
+        <div class="modal-window-result hidden">
+            <div class="item-filling">
+                <h2 class="modal-result-title"></h2>
+            </div>
+            <div class="result-button">
+                <button class="modal-button result-btn-close">Close</button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
